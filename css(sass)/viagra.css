@@ -1,0 +1,21 @@
+.viagra {
+  width: 243px;
+  height: 194px;
+  border: 1px solid red; }
+  .viagra .name {
+    background-color: #edf0f1;
+    font-size: 13px;
+    padding: 6px 195px 6px 15px; }
+  .viagra .pack {
+    background-color: #ff642b;
+    color: #fff;
+    font-size: 13px;
+    padding: 7px 77px 7px 72px;
+    border-radius: 3px; }
+    .viagra .pack i {
+      margin-right: 7px; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=viagra.css.map */
