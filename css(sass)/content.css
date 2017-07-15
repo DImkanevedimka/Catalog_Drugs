@@ -1,18 +1,17 @@
 .viagra {
   height: 194px;
   width: 241px;
-  border: 1px solid red;
+  border: 1px solid #edf0f2;
   float: left;
   position: relative; }
-  .viagra div .xenical {
-    margin-top: 1px; }
-  .viagra div .group {
-    margin: 8px 0px 8px 42px; }
+  .viagra .group {
+    margin: 9px 0px 7px 42px; }
   .viagra .name {
     display: block;
-    background-color: #edf0f1;
+    background-color: #edf0f2;
+    color: #35403e;
     font-size: 13px;
-    padding: 6px 188px 6px 14px;
+    padding: 5px 0px 6px 14px;
     font-family: Open Sans;
     font-weight: bold; }
   .viagra .both_part {
@@ -20,13 +19,16 @@
     .viagra .both_part .left_part {
       float: left;
       width: 76px;
-      margin: 14px 0px 0px 27px; }
-      .viagra .both_part .left_part .viagra_pic {
-        margin-bottom: 8px; }
+      margin: 83px 0px 3px 27px;
+      position: relative; }
+      .viagra .both_part .left_part img {
+        position: absolute;
+        bottom: 20px; }
       .viagra .both_part .left_part .more_info {
         font-family: Open Sans;
         font-size: 12px;
-        color: #35403e; }
+        color: #35403e;
+        text-decoration: none; }
         .viagra .both_part .left_part .more_info i {
           color: #80d3c9;
           margin-right: 7px; }
@@ -50,7 +52,7 @@
           font-size: 13px;
           margin-left: 8px; }
       .viagra .both_part .right_part .right_part_bot {
-        margin-top: 8px; }
+        margin-top: 6px; }
         .viagra .both_part .right_part .right_part_bot .offer {
           font-size: 11px;
           background-color: #ff642b;
@@ -72,8 +74,8 @@
     font-size: 13px;
     padding: 7px 77px 7px 72px;
     border-radius: 3px;
-    margin-left: 6px; }
+    margin-left: 5px; }
     .viagra .pack i {
       margin-right: 7px; }
 
-/*# sourceMappingURL=viagra.css.map */
+/*# sourceMappingURL=content.css.map */
