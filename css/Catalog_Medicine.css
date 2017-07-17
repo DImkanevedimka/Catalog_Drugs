@@ -5,7 +5,9 @@
   float: left;
   position: relative; }
   .viagra .group {
-    margin: 9px 0px 7px 42px; }
+    margin-top: 10px;
+    margin-bottom: 2px;
+    text-align: center; }
   .viagra .name {
     display: block;
     background-color: #edf0f2;
@@ -15,16 +17,20 @@
     font-family: Open Sans;
     font-weight: bold; }
   .viagra .both_part {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #f0f0f0; }
     .viagra .both_part .left_part {
-      float: left;
-      width: 76px;
-      margin: 83px 0px 3px 27px;
-      position: relative; }
-      .viagra .both_part .left_part img {
-        position: absolute;
-        bottom: 20px; }
+      width: 110px; }
+      .viagra .both_part .left_part .left_part_pic {
+        margin-left: 20px;
+        width: 100px;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
       .viagra .both_part .left_part .more_info {
+        margin-left: 30px;
         font-family: Open Sans;
         font-size: 12px;
         color: #35403e;
@@ -34,17 +40,19 @@
           margin-right: 7px; }
     .viagra .both_part .shape {
       position: absolute;
-      right: 121px; }
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%); }
     .viagra .both_part .right_part {
-      float: right;
+      margin-top: 10px;
       width: 120px;
       font-family: Arial;
-      font-weight: bold; }
+      font-weight: bold;
+      position: relative; }
       .viagra .both_part .right_part .right_part_top {
         width: 104px;
         background: #fcfcfc;
-        border: 1px solid #edf1f2;
-        margin-top: 8px; }
+        border: 1px solid #edf1f2; }
         .viagra .both_part .right_part .right_part_top .prices {
           font-size: 11px;
           margin-left: 8px; }
@@ -64,17 +72,25 @@
           color: #ff642b;
           margin-left: 3px; }
         .viagra .both_part .right_part .right_part_bot .pill {
+          float: right;
           display: block;
           font-size: 11px;
           font-weight: normal;
-          margin: 0px 0px 4px 70px; }
+          padding-right: 17px; }
   .viagra .pack {
+    display: block;
     background-color: #ff642b;
     color: #fff;
     font-size: 13px;
-    padding: 7px 77px 7px 72px;
     border-radius: 3px;
-    margin-left: 5px; }
+    font-family: Open Sans;
+    margin-left: 6px;
+    margin-right: 6px; }
+    .viagra .pack a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 0px 7px 71px; }
     .viagra .pack i {
       margin-right: 7px; }
 
@@ -86,7 +102,11 @@ a {
   margin: 0 auto; }
 
 .header_top {
-  margin: 0 0 9px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 9px;
   font-family: Open Sans;
   font-size: 12px;
   padding-bottom: 6px;
@@ -94,23 +114,14 @@ a {
   .header_top span a {
     color: #3cc9b0;
     font-weight: 700; }
-  .header_top .currency {
-    margin-left: 66px; }
   .header_top select {
     font-family: Open Sans;
     font-size: 12px;
     border: none; }
 
-.header_top_left {
-  float: left;
-  margin-top: 13px; }
-
 .cart {
   color: #35403e;
   font-size: 13px; }
-
-.shopping_cart {
-  margin: 0 8px 0 33px; }
 
 .eur {
   font-size: 13px;
@@ -122,47 +133,46 @@ a {
   color: #858c8b; }
 
 .chekout {
-  float: right;
   background-color: #ff642b;
   border-radius: 2px;
-  color: #fff;
   font-family: Open Sans;
-  font-size: 13px;
-  padding: 8px 45px;
-  margin-top: 6px; }
+  font-size: 13px; }
+  .chekout a {
+    color: #fff;
+    padding: 8px 45px;
+    display: block; }
 
 .header_middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-bottom: 9px;
   border-bottom: 1px solid #d0e7e6; }
 
-.logo {
-  margin-top: 13px;
-  float: left; }
+.logo img,
+.logo a {
+  display: block; }
 
 .baner_full {
-  display: inline-block;
-  float: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: #555;
   width: 700px;
   height: 61px; }
 
-.peregorodka {
+.divider {
   display: inline-block;
-  float: left;
   width: 1px;
   height: 46px;
-  margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.3); }
 
 .baner_left {
-  float: left;
-  display: inline-block;
-  width: 178px;
-  padding: 8px 0px 0px 37px; }
+  position: relative; }
 
 .bigletter {
   color: #fff;
-  font-family: "Open Sans Extrabold";
+  font-family: Open Sans Extrabold;
   font-size: 19px;
   font-style: italic;
   line-height: 16px; }
@@ -173,22 +183,22 @@ a {
   font-size: 11px;
   line-height: 16px; }
 
+.image_relative {
+  position: relative; }
+
 .baner_left_image {
-  float: right;
-  position: relative;
-  right: 25px; }
+  position: absolute;
+  left: 120px; }
 
 .baner_center {
-  display: inline-block;
-  width: 184px;
-  padding: 8px 0px 0px 32px;
-  float: left; }
+  position: relative; }
 
 .middle {
   font-weight: 700; }
 
 .baner_center_image {
-  right: 26px; }
+  position: absolute;
+  left: 115px; }
 
 .peregorodka2 {
   display: inline-block;
@@ -199,15 +209,13 @@ a {
   background-color: rgba(255, 255, 255, 0.3); }
 
 .baner_right {
-  display: inline-block;
-  float: left;
-  padding: 8px 0px 0px 32px; }
+  display: inline-block; }
   .baner_right .small {
     line-height: 13px; }
 
 .baner_right_text {
-  float: right;
-  margin-left: 8px; }
+  display: inline-block;
+  margin-left: 6px; }
 
 .smallest {
   font-style: italic;
@@ -222,7 +230,11 @@ a {
   padding-top: 5px; }
 
 .header_bottom {
-  margin: 7px 0px 7px 0px; }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7px;
+  margin-bottom: 7px; }
   .header_bottom span {
     color: #555959;
     font-family: "Open Sans";
@@ -231,25 +243,14 @@ a {
     font-style: italic;
     vertical-align: 6px; }
 
-.img_person {
-  margin: 0px 2px 0px 12px; }
-
-.img_star {
-  margin: 0px 2px 4px 30px; }
-
-.img_wax {
-  margin: 0px 0px 0px 35px; }
-
-.img_tablets {
-  margin: 0px 0px 0px 35px; }
+.star img {
+  margin-bottom: 3px; }
 
 header {
   background: linear-gradient(to top, #ebfaf8 0%, #fcfcfc 100%);
-  box-shadow: inset 0 -1px 0 #d0e7e6;
-  height: 208px;
-  border: 1px solid green; }
+  box-shadow: inset 0 -1px 0 #d0e7e6; }
 
-.main-menu-ul {
+.main-menu {
   width: 968px;
   height: 46px;
   background-color: #3cc9b0;
@@ -260,9 +261,9 @@ header {
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 700; }
-  .main-menu-ul span .fa-inverse {
+  .main-menu span .fa-inverse {
     color: #3cc9b0; }
-  .main-menu-ul a {
+  .main-menu a {
     text-decoration: none;
     color: #fff; }
 
@@ -285,14 +286,18 @@ li .fa-lg {
   font-weight: 700; }
 
 .search {
+  display: flex;
+  justify-content: space-between;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
   color: #182422;
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: 700;
   line-height: 21px;
-  margin-top: 17px; }
+  margin-top: 15px;
+  margin-bottom: 10px; }
   .search input {
+    display: block;
     color: #666;
     font-size: 12px;
     width: 202px;
@@ -302,38 +307,34 @@ li .fa-lg {
 
 .by_keyword {
   display: inline-block;
-  float: left; }
-  .by_keyword p {
-    margin: 5px 0 10px 0; }
+  position: relative; }
 
 .ellipse {
-  position: relative;
-  right: 23px;
-  top: 6px; }
+  position: absolute;
+  right: 5px;
+  top: 27px; }
 
 .by_name {
-  display: inline-block;
-  float: left; }
+  display: inline-block; }
 
-.ul_by_name {
+.list_by_name {
   width: 490px;
   display: flex;
   justify-content: space-between;
   margin-top: 10px; }
-  .ul_by_name li a {
+  .list_by_name li a {
     color: #ff642b;
     font-family: "Open Sans";
     font-size: 12px;
     font-weight: 700;
     text-decoration: underline; }
 
-ul.ul_by_name li:hover a {
+ul.list_by_name li:hover a {
   color: #3cc9b0;
   text-decoration: none; }
 
 .coupone {
-  display: inline-block;
-  float: right; }
+  display: inline-block; }
   .coupone span {
     color: #666;
     font-size: 12px;
@@ -349,24 +350,22 @@ ul.ul_by_name li:hover a {
   font-weight: 700;
   line-height: 30px;
   text-align: center;
-  vertical-align: middle;
   margin-top: 5px; }
 
-.left {
+.left-colum {
+  float: left;
   width: 204px;
-  float: left; }
-  .left span {
+  display: inline-block; }
+  .left-colum span {
     display: block;
     font-family: Open Sans;
     font-size: 12px; }
-  .left .Question {
+  .left-colum .Question {
     color: #3cc9b0;
     font-weight: bold;
     margin-top: 20px; }
-  .left .Answer {
+  .left-colum .Answer {
     color: #858c8b; }
-  .left .First_question {
-    margin-top: 15px; }
 
 .FAQ {
   display: inline-block;
@@ -377,22 +376,22 @@ ul.ul_by_name li:hover a {
   font-weight: 700;
   text-decoration: underline; }
 
-.left-colum {
+.left-colum_all {
   background-color: #fcfcfc;
   border: 1px solid #edf1f2; }
-  .left-colum ul li:first-child {
+  .left-colum_all ul li:first-child {
     margin-top: 18px; }
-  .left-colum ul li:hover a {
+  .left-colum_all ul li:hover a {
     text-decoration: underline; }
-  .left-colum ul li {
+  .left-colum_all ul li {
     margin: 0px 0px 13px 16px;
     font-size: 13px;
     font-family: Open Sans; }
-    .left-colum ul li i {
+    .left-colum_all ul li i {
       color: #80d3c9;
       font-size: 13px;
       margin-right: 10px; }
-    .left-colum ul li a {
+    .left-colum_all ul li a {
       text-decoration: none;
       color: #000; }
 
@@ -437,17 +436,12 @@ ul.ul_by_name li:hover a {
   float: right; }
 
 .baners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fcfcfc;
   border: 1px solid #edf1f2;
-  padding-top: 13px; }
-
-.baner_bottom_left {
-  float: left;
-  margin: 0 0 0 78px; }
-
-.baner_bottom_right {
-  float: right;
-  margin: 0 88px 9px 0; }
+  padding: 13px 86px 9px 78px; }
 
 .awards {
   display: inline-block;
@@ -469,6 +463,10 @@ ul.ul_by_name li:hover a {
   align-items: center;
   border-top: 1px solid #edf1f2;
   border-bottom: 1px solid #edf1f2; }
+  .footer_top li a {
+    display: block; }
+    .footer_top li a img {
+      display: block; }
 
 .footer_center {
   width: 712px;
@@ -479,33 +477,36 @@ ul.ul_by_name li:hover a {
   .footer_center li {
     color: #33414e;
     font-family: "Open Sans";
-    font-size: 13px; }
+    font-size: 13px;
+    display: block; }
+    .footer_center li img {
+      display: block; }
 
 .footer_bottom {
-  margin: 17px 0 0 0;
-  border-top: 1px solid #edf1f2; }
-
-.logo_copy {
-  margin: 18px 115px 10px 0;
-  float: left; }
-  .logo_copy p {
-    color: #35403e;
-    font-family: "Open Sans";
-    font-size: 12px;
-    margin-left: 31px; }
-
-.footer_bottom_ul {
-  margin: 33px 0 0 0;
+  margin-top: 17px;
+  border-top: 1px solid #edf1f2;
   display: flex;
-  width: 608px; }
-  .footer_bottom_ul li {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 15px; }
+
+.logo_copy p {
+  color: #35403e;
+  font-family: "Open Sans";
+  font-size: 12px;
+  margin-left: 31px; }
+
+.footer_bottom_list {
+  display: flex; }
+  .footer_bottom_list li {
     font-family: "Open Sans";
     font-size: 12px;
     padding: 0 10px;
     border-right: 1px solid #858c8b; }
-    .footer_bottom_ul li a {
+    .footer_bottom_list li a {
       color: #35403e; }
-  .footer_bottom_ul li:last-child {
+  .footer_bottom_list li:last-child {
     border: none; }
 
 /*# sourceMappingURL=Catalog_Medicine.css.map */

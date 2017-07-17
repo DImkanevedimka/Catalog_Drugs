@@ -7,7 +7,9 @@ $OpS: Open Sans
 	float: left
 	position: relative
 	.group
-		margin: 9px 0px 7px 42px
+		margin-top: 10px
+		margin-bottom: 2px
+		text-align: center
 	.name
 		display: block
 		background-color: #edf0f2
@@ -16,18 +18,21 @@ $OpS: Open Sans
 		padding: 5px 0px 6px 14px
 		font-family: $OpS
 		font-weight: bold
-
 	.both_part
+		display: flex
+		justify-content: space-between
 		border-bottom: 1px solid #f0f0f0
 		.left_part
-			float: left
-			width: 76px
-			margin: 83px 0px 3px 27px
-			position: relative
-			img
-				position: absolute
-				bottom: 20px
+			width: 110px
+			.left_part_pic
+				margin-left: 20px
+				width: 100px
+				height: 85px
+				display: flex
+				justify-content: center
+				align-items: center
 			.more_info
+				margin-left: 30px
 				font-family: $OpS
 				font-size: 12px
 				color: #35403e
@@ -37,27 +42,25 @@ $OpS: Open Sans
 					margin-right: 7px
 		.shape
 			position: absolute
-			right: 121px
+			left: -8px
+			top: 50%
+			transform: translateY(-50%)
 		.right_part
-			float: right
+			margin-top: 10px
 			width: 120px
 			font-family: Arial
 			font-weight: bold
-
+			position: relative
 			.right_part_top
 				width: 104px
 				background: #fcfcfc
 				border: 1px solid #edf1f2
-				margin-top: 8px
-
 				.prices
 					font-size: 11px
 					margin-left: 8px
-
 				.prices_USD
 					font-size: 13px	
 					margin-left: 8px
-
 			.right_part_bot
 				margin-top: 6px
 				.offer
@@ -66,25 +69,29 @@ $OpS: Open Sans
 					color: #fff
 					padding: 0px 6px 0px 7px
 					margin-left: 2px
-
 				.usd
 					font-size: 20px
 					color: #ff642b
 					margin-left: 3px
-
 				.pill
+					float: right
 					display: block
 					font-size: 11px
 					font-weight: normal
-					margin: 0px 0px 4px 70px
-		
+					padding-right: 17px
 	.pack
+		display: block
 		background-color: #ff642b
 		color: #fff
 		font-size: 13px
-		padding: 7px 77px 7px 72px
 		border-radius: 3px
-		margin-left: 5px
+		font-family: $OpS
+		margin-left: 6px
+		margin-right: 6px
+		a
+			display: block
+			color: #fff
+			text-decoration: none
+			padding: 7px 0px 7px 71px
 		i
 			margin-right: 7px
-

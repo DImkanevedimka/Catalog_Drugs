@@ -5,7 +5,9 @@
   float: left;
   position: relative; }
   .viagra .group {
-    margin: 9px 0px 7px 42px; }
+    margin-top: 10px;
+    margin-bottom: 2px;
+    text-align: center; }
   .viagra .name {
     display: block;
     background-color: #edf0f2;
@@ -15,16 +17,20 @@
     font-family: Open Sans;
     font-weight: bold; }
   .viagra .both_part {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #f0f0f0; }
     .viagra .both_part .left_part {
-      float: left;
-      width: 76px;
-      margin: 83px 0px 3px 27px;
-      position: relative; }
-      .viagra .both_part .left_part img {
-        position: absolute;
-        bottom: 20px; }
+      width: 110px; }
+      .viagra .both_part .left_part .left_part_pic {
+        margin-left: 20px;
+        width: 100px;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
       .viagra .both_part .left_part .more_info {
+        margin-left: 30px;
         font-family: Open Sans;
         font-size: 12px;
         color: #35403e;
@@ -34,17 +40,19 @@
           margin-right: 7px; }
     .viagra .both_part .shape {
       position: absolute;
-      right: 121px; }
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%); }
     .viagra .both_part .right_part {
-      float: right;
+      margin-top: 10px;
       width: 120px;
       font-family: Arial;
-      font-weight: bold; }
+      font-weight: bold;
+      position: relative; }
       .viagra .both_part .right_part .right_part_top {
         width: 104px;
         background: #fcfcfc;
-        border: 1px solid #edf1f2;
-        margin-top: 8px; }
+        border: 1px solid #edf1f2; }
         .viagra .both_part .right_part .right_part_top .prices {
           font-size: 11px;
           margin-left: 8px; }
@@ -64,17 +72,25 @@
           color: #ff642b;
           margin-left: 3px; }
         .viagra .both_part .right_part .right_part_bot .pill {
+          float: right;
           display: block;
           font-size: 11px;
           font-weight: normal;
-          margin: 0px 0px 4px 70px; }
+          padding-right: 17px; }
   .viagra .pack {
+    display: block;
     background-color: #ff642b;
     color: #fff;
     font-size: 13px;
-    padding: 7px 77px 7px 72px;
     border-radius: 3px;
-    margin-left: 5px; }
+    font-family: Open Sans;
+    margin-left: 6px;
+    margin-right: 6px; }
+    .viagra .pack a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 0px 7px 71px; }
     .viagra .pack i {
       margin-right: 7px; }
 

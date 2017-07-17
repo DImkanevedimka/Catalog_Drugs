@@ -9,32 +9,29 @@ a
 	margin: 0 auto
 
 .header_top
-	margin: 0 0 9px 0
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 4px
+	margin-bottom: 9px
 	font-family: $OpS
 	font-size: 12px
 	padding-bottom: 6px
 	border-bottom: 1px solid #d0e7e6
+
 	span
 		a
 			color: $color1
 			font-weight: 700
-	.currency
-		margin-left: 66px
 	select
 		font-family: $OpS
 		font-size: 12px
 		border: none
 
-.header_top_left
-	float: left
-	margin-top: 13px
 
 .cart
 	color: #35403e
 	font-size: 13px
-
-.shopping_cart
-	margin: 0 8px 0 33px
 
 .eur
 	font-size: 13px
@@ -46,47 +43,47 @@ a
 	color: #858c8b
 
 .chekout
-	float: right
 	background-color: #ff642b
 	border-radius: 2px
-	color: #fff
 	font-family: $OpS
 	font-size: 13px
-	padding: 8px 45px
-	margin-top: 6px
+	a
+		color: #fff
+		padding: 8px 45px
+		display: block
 
 .header_middle
+	display: flex
+	justify-content: space-between
+	align-items: center
 	padding-bottom: 9px
 	border-bottom: 1px solid #d0e7e6
 
 .logo
-	margin-top: 13px
-	float: left
+	img,
+	a
+		display: block
 
 .baner_full
-	display: inline-block
-	float: right
+	display: flex
+	justify-content: space-around
+	align-items: center
 	background: #555
 	width: 700px
 	height: 61px
 
-.peregorodka
+.divider
 	display: inline-block
-	float: left
 	width: 1px
 	height: 46px
-	margin-top: 10px
 	background-color: rgba(255, 255, 255, 0.3)
 
 .baner_left
-	float: left
-	display: inline-block
-	width: 178px
-	padding: 8px 0px 0px 37px
+	position: relative
 
 .bigletter
 	color: #fff
-	font-family: "Open Sans Extrabold"
+	font-family: Open Sans Extrabold
 	font-size: 19px
 	font-style: italic
 	line-height: 16px
@@ -97,22 +94,23 @@ a
 	font-size: 11px
 	line-height: 16px
 
-.baner_left_image
-	float: right
+.image_relative
 	position: relative
-	right: 25px
+
+.baner_left_image
+	position: absolute
+	left: 120px
 
 .baner_center
-	display: inline-block
-	width: 184px
-	padding: 8px 0px 0px 32px
-	float: left
+	position: relative
+
 .middle
 	font-weight: 700
 
 
-.baner_center_image	
-	right: 26px	
+.baner_center_image
+	position: absolute	
+	left: 115px	
 
 .peregorodka2
 	display: inline-block
@@ -124,14 +122,12 @@ a
 
 .baner_right
 	display: inline-block
-	float: left
-	padding: 8px 0px 0px 32px
 	.small
 		line-height: 13px
 
 .baner_right_text
-	float: right
-	margin-left: 8px
+	display: inline-block
+	margin-left: 6px
 
 .smallest
 	font-style: italic
@@ -146,7 +142,11 @@ a
 	padding-top: 5px
 
 .header_bottom
-	margin: 7px 0px 7px 0px
+	display: flex
+	justify-content: space-around
+	align-items: center
+	margin-top: 7px
+	margin-bottom: 7px
 	span
 		color: #555959
 		font-family: "Open Sans"
@@ -154,24 +154,18 @@ a
 		font-weight: 700
 		font-style: italic
 		vertical-align: 6px
-.img_person
-	margin: 0px 2px 0px 12px
 
-.img_star
-	margin: 0px 2px 4px 30px
+.star
+	img
+		margin-bottom: 3px
 
-.img_wax
-	margin: 0px 0px 0px 35px
 
-.img_tablets
-	margin: 0px 0px 0px 35px
+
 header
 	background: linear-gradient(to top, #ebfaf8 0%, #fcfcfc 100%)
 	box-shadow: inset 0 -1px 0 #d0e7e6
-	height: 208px
-	border: 1px solid green
 
-.main-menu-ul
+.main-menu
 	width: 968px
 	height: 46px
 	background-color: $color1
@@ -210,14 +204,18 @@ li
 	font-weight: 700
 
 .search
+	display: flex
+	justify-content: space-between
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75)
 	color: #182422
 	font-family: "Open Sans"
 	font-size: 13px
 	font-weight: 700
 	line-height: 21px
-	margin-top: 17px
+	margin-top: 15px
+	margin-bottom: 10px
 	input
+		display: block
 		color: #666
 		font-size: 12px
 		width: 202px
@@ -227,20 +225,17 @@ li
 
 .by_keyword
 	display: inline-block
-	float: left
-	p
-		margin: 5px 0 10px 0
+	position: relative
 
 .ellipse
-	position: relative
-	right: 23px
-	top: 6px
+	position: absolute
+	right: 5px
+	top: 27px
 
 .by_name
 	display: inline-block
-	float: left
 	
-.ul_by_name
+.list_by_name
 	width: 490px
 	display: flex
 	justify-content: space-between
@@ -253,16 +248,17 @@ li
 			font-weight: 700
 			text-decoration: underline
 
-ul.ul_by_name li:hover a
+ul.list_by_name li:hover a
 	color: $color1
 	text-decoration: none
+
 .coupone
 	display: inline-block
-	float: right
 	span
 		color: #666
 		font-size: 12px
 		font-weight: 400
+
 .discount
 	width: 242px
 	height: 31px
@@ -273,11 +269,11 @@ ul.ul_by_name li:hover a
 	font-weight: 700
 	line-height: 30px
 	text-align: center
-	vertical-align: middle
 	margin-top: 5px
-.left
-	width: 204px
+.left-colum
 	float: left
+	width: 204px
+	display: inline-block
 	span
 		display: block
 		font-family: $OpS
@@ -288,8 +284,7 @@ ul.ul_by_name li:hover a
 		margin-top: 20px
 	.Answer
 		color: #858c8b
-	.First_question
-		margin-top: 15px
+
 
 .FAQ
 	display: inline-block
@@ -300,7 +295,7 @@ ul.ul_by_name li:hover a
 	font-weight: 700
 	text-decoration: underline
 
-.left-colum
+.left-colum_all
 	background-color: #fcfcfc
 	border: 1px solid #edf1f2
 	ul
@@ -352,7 +347,6 @@ ul.ul_by_name li:hover a
 .drugs_catalog
 	li
 		margin: 0px 9px 10px 0px
-
 	li:nth-child(3),
 	li:nth-child(8),
 	li:nth-child(11),
@@ -363,18 +357,13 @@ ul.ul_by_name li:hover a
 	float: right
 
 .baners
+	display: flex
+	justify-content: space-between
+	align-items: center
 	background-color: #fcfcfc
 	border: 1px solid #edf1f2
-	padding-top: 13px
-
-.baner_bottom_left
-	float: left
-	margin: 0 0 0 78px
-
-.baner_bottom_right
-	float: right
-	margin: 0 88px 9px 0
-
+	padding: 13px 86px 9px 78px
+	
 .awards
 	display: inline-block
 	margin-top: 15px
@@ -385,6 +374,7 @@ ul.ul_by_name li:hover a
 	span
 		font-size: 12px
 		font-weight: 400
+
 .footer_top
 	margin-top: 10px
 	padding: 21px 0 15px 0
@@ -394,6 +384,11 @@ ul.ul_by_name li:hover a
 	align-items: center
 	border-top: 1px solid #edf1f2
 	border-bottom: 1px solid #edf1f2
+	li
+		a
+			display: block
+			img
+				display: block
 
 .footer_center
 	width: 712px
@@ -405,23 +400,28 @@ ul.ul_by_name li:hover a
 		color: #33414e
 		font-family: "Open Sans"
 		font-size: 13px
-
+		a
+		display: block
+		img
+			display: block
 
 .footer_bottom
-	margin: 17px 0 0 0 
+	margin-top: 17px 
 	border-top: 1px solid #edf1f2
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 19px
+	padding-bottom: 15px
 .logo_copy
-	margin: 18px 115px 10px 0 
-	float: left
 	p
 		color: #35403e
 		font-family: "Open Sans"
 		font-size: 12px
 		margin-left: 31px
-.footer_bottom_ul
-	margin: 33px 0 0 0
+
+.footer_bottom_list
 	display: flex
-	width: 608px
 	li
 		font-family: "Open Sans"
 		font-size: 12px

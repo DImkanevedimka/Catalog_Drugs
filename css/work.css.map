@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,IAAK;EACJ,gBAAgB,EAJT,GAAG;EAKV,KAAK,EAHA,MAAM",
+"sources": ["../sass/work.scss"],
+"names": [],
+"file": "work.css"
+}
